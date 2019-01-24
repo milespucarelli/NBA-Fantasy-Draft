@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   resources :users, only: %i[show edit update destroy]
 
   get '/drafts/new/:id', to: 'drafts#new', as: 'new_draft'
+  get '/drafts/edit/:id', to: 'drafts#edit', as: 'edit_draft'
+  patch 'drafts/update/:id', to: 'drafts#update', as: 'update_draft'
 
   get '/signup', to: 'users#new'
   post '/users', to: 'users#create', as: 'users'

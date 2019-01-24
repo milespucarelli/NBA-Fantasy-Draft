@@ -23,7 +23,7 @@ Player.create(name: 'Russell Westbrook', position: 'Point Guard', ppg: 22.9, fga
 Player.create(name: 'Dwyane Wade', position: 'Shooting Guard', ppg: 22.2, fga: 16.8, fgp: 48.1, reb: 4.7, ast: 5.5, stl: 1.6, blk: 0.8, tov: 3.2)
 Player.create(name: 'Stephen Curry', position: 'Point Guard', ppg: 22.4, fga: 17.0, fgp: 47.8, reb: 4.5, ast: 6.7, stl: 1.7, blk: 0.2, tov: 3.1)
 Player.create(name: 'Tim Duncan', position: 'Power Forward', ppg: 19.0, fga: 14.6, fgp: 50.6, reb: 10.8, ast: 3.0, stl: 0.7, blk: 2.2, tov: 2.4)
-# doc = Nokogiri::HTML(open('https://stats.nba.com/alltime-leaders/?SeasonType=Regular%20Season&PerMode=PerGame.html'))
+# doc = Nokogiri::HTML(open('https://www.basketball-reference.com/awards/slam_500_greatest.html'))
 # table = doc.at('tbody')
 # table.search('tr').each do |tr|
 #   tr.search('td').each_with_index do |td, index|
