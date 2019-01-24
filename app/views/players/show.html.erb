@@ -1,5 +1,43 @@
 <h1><%= @player.name %></h1>
-<h3>Current NBA Team: </h3>
-<li><%= @player.nba_team %></li>
-<h3>Jersey Number: </h3>
-<li><%= @player.jersey_number %></li>
+
+<h2> Position: <%= @player.position %> </h2>
+
+<table id="Statistics">
+  <thead>
+  <tr>
+    <th>Points Per Game</th>
+    <th>Field Goal Attempts</th>
+    <th>Field Goal %</th>
+    <th>Rebounds</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><%= @player.ppg %></td>
+    <td><%= @player.fga %></td>
+    <td><%= @player.fgp %></td>
+    <td><%= @player.reb %></td>
+  </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+
+
+  <tr>
+    <th>Assists</th>
+    <th>Steals</th>
+    <th>Blocks</th>
+    <th>Turnovers</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><%= @player.ast %></td>
+    <td><%= @player.stl %></td>
+    <td><%= @player.blk %></td>
+    <td><%= @player.tov %></td>
+  </tr>
+</tbody>
+</table>

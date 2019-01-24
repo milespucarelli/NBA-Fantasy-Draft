@@ -1,12 +1,14 @@
 class TeamsController < ApplicationController
   def new
-    @team = Team.new
+    current_user
+    @team = Team.new(user_id: @current_user.id)
   end
 
   def create
+    current_user
     @team = Team.create(team_params)
     if @team.valid?
-      redirect_to team_path(@team)
+      redirect_to new_draft_path(@team)
     else
       flash[:errors] = @team.errors.full_messages
       render :new
@@ -49,6 +51,6 @@ class TeamsController < ApplicationController
   end
 
   def team_params
-    params.require(:team).permit(:name, :hometown)
+    params.require(:team).permit(:name, :hometown, :user_id)
   end
 end

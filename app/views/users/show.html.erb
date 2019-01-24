@@ -1,0 +1,9 @@
+<h1><%= @user.username %></h1>
+<h3>Teams: </h3>
+<ul>
+  <% @user.teams.each do |team| %>
+  <li><%= link_to team.full_name, team_path(team) %>
+  <% end %>
+</ul>
+<%= button_to "Create a New Team", new_team_path, method: 'get' %>
+<%= button_to "Logout", logout_path, method: 'delete' %>

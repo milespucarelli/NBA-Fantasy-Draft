@@ -1,4 +1,5 @@
 class Team < ApplicationRecord
+  belongs_to :user
   has_many :drafts
   has_many :players, through: :drafts
 
@@ -8,4 +9,8 @@ class Team < ApplicationRecord
   validates :hometown, presence: true
   validates :hometown, uniqueness: true
   validates :hometown, length: { maximum: 25 }
+
+  def full_name
+    "#{self.hometown} #{self.name}"
+  end
 end

@@ -1,5 +1,6 @@
 <h1>Create Your New Team:</h1>
 <%= form_for @team do |f| %>
+  <%= f.hidden_field :user_id %>
   <%= f.label :hometown %>
   <%= f.text_field :hometown %>
   <%= f.label :name %>
