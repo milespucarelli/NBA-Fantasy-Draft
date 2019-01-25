@@ -9125,3 +9125,1381 @@ Processing by PlayersController#show as HTML
 Completed 200 OK in 29ms (Views: 22.9ms | ActiveRecord: 0.7ms)
 
 
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20190123205127)
+  [1m[35m (12.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (31.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190123205127_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (5.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190123205127"]]
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (8.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20190123205127)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (43.4ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Destroy (12.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190123205127"]]
+  ↳ bin/rails:4
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateDrafts (20190118210450)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (3.9ms)[0m  [1m[35mDROP TABLE "drafts"[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190118210450"]]
+  ↳ bin/rails:4
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreateTeams (20190118210248)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (9.4ms)[0m  [1m[35mDROP TABLE "teams"[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190118210248"]]
+  ↳ bin/rails:4
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreatePlayers (20190118205751)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (2.3ms)[0m  [1m[35mDROP TABLE "players"[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190118205751"]]
+  ↳ bin/rails:4
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+Migrating to CreatePlayers (20190118205751)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "players" ("id" bigserial primary key, "name" character varying, "position" character varying, "ppg" decimal, "fga" decimal, "fgp" decimal, "reb" decimal, "ast" decimal, "stl" decimal, "blk" decimal, "tov" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190118205751_create_players.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190118205751"]]
+  ↳ bin/rails:4
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateTeams (20190118210248)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "teams" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190118210248_create_teams.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190118210248"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateDrafts (20190118210450)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "drafts" ("id" bigserial primary key, "player_id" integer, "team_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190118210450_create_drafts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190118210450"]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+Migrating to CreateUsers (20190123205127)
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190123205127_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190123205127"]]
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4097442400209998070)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPlayer Create (19.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Michael Jordan"], ["position", "Shooting Guard"], ["ppg", "30.1"], ["fga", "22.9"], ["fgp", "49.7"], ["reb", "6.2"], ["ast", "5.3"], ["stl", "2.3"], ["blk", "0.8"], ["tov", "2.7"], ["created_at", "2019-01-24 23:11:07.161665"], ["updated_at", "2019-01-24 23:11:07.161665"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kevin Durant"], ["position", "Small Forward"], ["ppg", "27.2"], ["fga", "18.8"], ["fgp", "49.1"], ["reb", "7.1"], ["ast", "4.0"], ["stl", "1.1"], ["blk", "1.1"], ["tov", "3.2"], ["created_at", "2019-01-24 23:11:07.190180"], ["updated_at", "2019-01-24 23:11:07.190180"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "LeBron James"], ["position", "Small Forward"], ["ppg", "27.2"], ["fga", "19.6"], ["fgp", "50.4"], ["reb", "7.4"], ["ast", "7.2"], ["stl", "1.6"], ["blk", "0.8"], ["tov", "3.5"], ["created_at", "2019-01-24 23:11:07.193059"], ["updated_at", "2019-01-24 23:11:07.193059"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Allen Iverson"], ["position", "Point Guard"], ["ppg", "26.7"], ["fga", "21.8"], ["fgp", "42.5"], ["reb", "3.7"], ["ast", "6.2"], ["stl", "2.2"], ["blk", "0.2"], ["tov", "3.6"], ["created_at", "2019-01-24 23:11:07.196003"], ["updated_at", "2019-01-24 23:11:07.196003"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Karl Malone"], ["position", "Power Forward"], ["ppg", "25.0"], ["fga", "17.8"], ["fgp", "51.6"], ["reb", "10.1"], ["ast", "3.6"], ["stl", "1.4"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-24 23:11:07.198714"], ["updated_at", "2019-01-24 23:11:07.198714"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kobe Bryant"], ["position", "Shooting Guard"], ["ppg", "25.0"], ["fga", "19.5"], ["fgp", "44.7"], ["reb", "5.2"], ["ast", "4.7"], ["stl", "1.4"], ["blk", "0.5"], ["tov", "3.0"], ["created_at", "2019-01-24 23:11:07.201393"], ["updated_at", "2019-01-24 23:11:07.201393"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dominique Wilkins"], ["position", "Small Forward"], ["ppg", "24.8"], ["fga", "20.1"], ["fgp", "46.1"], ["reb", "6.7"], ["ast", "2.5"], ["stl", "1.3"], ["blk", "0.6"], ["tov", "2.5"], ["created_at", "2019-01-24 23:11:07.203815"], ["updated_at", "2019-01-24 23:11:07.203815"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kareem Abdul-Jabbar"], ["position", "Center"], ["ppg", "24.6"], ["fga", "18.1"], ["fgp", "55.9"], ["reb", "11.2"], ["ast", "3.6"], ["stl", "0.9"], ["blk", "2.6"], ["tov", "2.7"], ["created_at", "2019-01-24 23:11:07.206294"], ["updated_at", "2019-01-24 23:11:07.206294"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Larry Bird"], ["position", "Small Forward"], ["ppg", "24.3"], ["fga", "19.3"], ["fgp", "49.6"], ["reb", "10.0"], ["ast", "6.3"], ["stl", "1.7"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-24 23:11:07.208586"], ["updated_at", "2019-01-24 23:11:07.208586"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Adrian Dantley"], ["position", "Small Forward"], ["ppg", "24.3"], ["fga", "15.8"], ["fgp", "54.0"], ["reb", "5.7"], ["ast", "3.0"], ["stl", "1.0"], ["blk", "0.2"], ["tov", "2.9"], ["created_at", "2019-01-24 23:11:07.211169"], ["updated_at", "2019-01-24 23:11:07.211169"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shaquille O'Neal"], ["position", "Center"], ["ppg", "23.7"], ["fga", "16.1"], ["fgp", "58.2"], ["reb", "10.9"], ["ast", "2.5"], ["stl", "0.6"], ["blk", "2.3"], ["tov", "2.7"], ["created_at", "2019-01-24 23:11:07.213529"], ["updated_at", "2019-01-24 23:11:07.213529"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Carmelo Anthony"], ["position", "Small Forward"], ["ppg", "24.0"], ["fga", "19.1"], ["fgp", "44.9"], ["reb", "6.5"], ["ast", "3.0"], ["stl", "1.0"], ["blk", "0.5"], ["tov", "2.7"], ["created_at", "2019-01-24 23:11:07.215715"], ["updated_at", "2019-01-24 23:11:07.215715"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Russell Westbrook"], ["position", "Point Guard"], ["ppg", "22.9"], ["fga", "18.5"], ["fgp", "43.4"], ["reb", "6.8"], ["ast", "8.3"], ["stl", "1.8"], ["blk", "0.3"], ["tov", "4.0"], ["created_at", "2019-01-24 23:11:07.217897"], ["updated_at", "2019-01-24 23:11:07.217897"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dwyane Wade"], ["position", "Shooting Guard"], ["ppg", "22.2"], ["fga", "16.8"], ["fgp", "48.1"], ["reb", "4.7"], ["ast", "5.5"], ["stl", "1.6"], ["blk", "0.8"], ["tov", "3.2"], ["created_at", "2019-01-24 23:11:07.220254"], ["updated_at", "2019-01-24 23:11:07.220254"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Stephen Curry"], ["position", "Point Guard"], ["ppg", "22.4"], ["fga", "17.0"], ["fgp", "47.8"], ["reb", "4.5"], ["ast", "6.7"], ["stl", "1.7"], ["blk", "0.2"], ["tov", "3.1"], ["created_at", "2019-01-24 23:11:07.222582"], ["updated_at", "2019-01-24 23:11:07.222582"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tim Duncan"], ["position", "Power Forward"], ["ppg", "19.0"], ["fga", "14.6"], ["fgp", "50.6"], ["reb", "10.8"], ["ast", "3.0"], ["stl", "0.7"], ["blk", "2.2"], ["tov", "2.4"], ["created_at", "2019-01-24 23:11:07.224914"], ["updated_at", "2019-01-24 23:11:07.224914"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kyrie Irving"], ["position", "Point Guard"], ["ppg", "22.1"], ["fga", "17.4"], ["fgp", "46.5"], ["reb", "3.6"], ["ast", "5.6"], ["stl", "1.3"], ["blk", "0.3"], ["tov", "2.7"], ["created_at", "2019-01-24 23:11:07.227345"], ["updated_at", "2019-01-24 23:11:07.227345"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Hakeem Olajuwon"], ["position", "Center"], ["ppg", "21.8"], ["fga", "17.0"], ["fgp", "51.2"], ["reb", "11.1"], ["ast", "2.5"], ["stl", "1.7"], ["blk", "3.1"], ["tov", "3.0"], ["created_at", "2019-01-24 23:11:07.229701"], ["updated_at", "2019-01-24 23:11:07.229701"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Julius Erving"], ["position", "Small Forward"], ["ppg", "24.2"], ["fga", "18.8"], ["fgp", "50.6"], ["reb", "8.5"], ["ast", "4.2"], ["stl", "2.0"], ["blk", "1.7"], ["tov", "3.4"], ["created_at", "2019-01-24 23:11:07.232210"], ["updated_at", "2019-01-24 23:11:07.232210"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Isiah Thomas"], ["position", "Point Guard"], ["ppg", "19.2"], ["fga", "16.2"], ["fgp", "45.2"], ["reb", "3.6"], ["ast", "9.3"], ["stl", "1.9"], ["blk", "0.3"], ["tov", "3.8"], ["created_at", "2019-01-24 23:11:07.234624"], ["updated_at", "2019-01-24 23:11:07.234624"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Charles Barkley"], ["position", "Power Forward"], ["ppg", "22.1"], ["fga", "14.5"], ["fgp", "54.1"], ["reb", "11.7"], ["ast", "3.9"], ["stl", "1.5"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-24 23:11:07.236872"], ["updated_at", "2019-01-24 23:11:07.236872"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kevin Garnett"], ["position", "Power Forward"], ["ppg", "17.8"], ["fga", "14.5"], ["fgp", "49.7"], ["reb", "10.0"], ["ast", "3.7"], ["stl", "1.3"], ["blk", "1.4"], ["tov", "2.2"], ["created_at", "2019-01-24 23:11:07.239176"], ["updated_at", "2019-01-24 23:11:07.239176"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Scottie Pippen"], ["position", "Small Forward"], ["ppg", "16.1"], ["fga", "13.3"], ["fgp", "47.3"], ["reb", "6.4"], ["ast", "5.2"], ["stl", "2.0"], ["blk", "0.8"], ["tov", "2.8"], ["created_at", "2019-01-24 23:11:07.241376"], ["updated_at", "2019-01-24 23:11:07.241376"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dirk Nowitzki"], ["position", "Power Forward"], ["ppg", "21.0"], ["fga", "15.8"], ["fgp", "47.2"], ["reb", "7.6"], ["ast", "2.4"], ["stl", "0.8"], ["blk", "0.9"], ["tov", "1.7"], ["created_at", "2019-01-24 23:11:07.243688"], ["updated_at", "2019-01-24 23:11:07.243688"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Jason Kidd"], ["position", "Point Guard"], ["ppg", "12.6"], ["fga", "11.2"], ["fgp", "40.0"], ["reb", "6.3"], ["ast", "8.7"], ["stl", "1.9"], ["blk", "0.3"], ["tov", "2.9"], ["created_at", "2019-01-24 23:11:07.246039"], ["updated_at", "2019-01-24 23:11:07.246039"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Gary Payton"], ["position", "Point Guard"], ["ppg", "16.3"], ["fga", "14.0"], ["fgp", "46.6"], ["reb", "3.9"], ["ast", "6.7"], ["stl", "1.8"], ["blk", "0.2"], ["tov", "2.3"], ["created_at", "2019-01-24 23:11:07.248347"], ["updated_at", "2019-01-24 23:11:07.248347"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Clyde Drexler"], ["position", "Shooting Guard"], ["ppg", "20.4"], ["fga", "16.3"], ["fgp", "47.2"], ["reb", "6.1"], ["ast", "5.6"], ["stl", "2.0"], ["blk", "0.7"], ["tov", "2.7"], ["created_at", "2019-01-24 23:11:07.250570"], ["updated_at", "2019-01-24 23:11:07.250570"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+Started GET "/" for 127.0.0.1 at 2019-01-24 18:14:57 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jeroldkim/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jeroldkim/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jeroldkim/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 20ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-01-24 18:15:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/new" for 127.0.0.1 at 2019-01-24 18:15:06 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"new"}
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorized rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-01-24 18:15:06 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 270ms (Views: 260.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2019-01-24 18:15:11 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FwURaKnjjPR+NPMy8Km/rZKDEzSrxd7dUVhOQnkkoHG3hE1+XUYH3oiVBDrfshf9dbrYnlleBDaDyCbKAGTJAw==", "username"=>"horangijk", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "horangijk"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7
+Redirected to http://localhost:3000/login
+Completed 302 Found in 44ms (ActiveRecord: 32.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-01-24 18:15:11 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-24 18:15:30 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jeroldkim/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jeroldkim/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-01-24 18:15:37 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 55ms (Views: 39.7ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-01-24 18:15:46 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oj9ZwXSjvYY9giPgHJeDaAPr5cgQOu5lYNvR0chQxNwCvgXXgAY2rMsj1OgzjCs45NIuYuKhNI6yS7lZsRCtrg==", "user"=>{"username"=>"horangijk", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "horangijk"], ["password_digest", "$2a$10$YZGKq6zVjnVNFm0qr25d7O13OI6PuBryByysPxtRIAcZy9MMMqjVi"], ["created_at", "2019-01-24 23:15:46.512541"], ["updated_at", "2019-01-24 23:15:46.512541"]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 76ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-01-24 18:15:46 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTeam Load (13.8ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:4
+  Rendered users/show.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 55ms (Views: 32.5ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2019-01-24 18:15:51 -0500
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 80ms (Views: 66.5ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2019-01-24 18:15:56 -0500
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e5eBwT+YyBjGW1iJ+VP6xEOF1TE+KPqZzs+O2eqk5OXbFt3Xyz1DMjD6r4HWSFKUpLwem8yzIHIcX+ZRk+SNlw==", "team"=>{"user_id"=>"1", "hometown"=>"Harlem", "name"=>"Globetrotters"}, "commit"=>"Create Team"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mTeam Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = $1 LIMIT $2[0m  [["name", "Globetrotters"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."hometown" = $1 LIMIT $2[0m  [["hometown", "Harlem"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mTeam Create (1.1ms)[0m  [1m[32mINSERT INTO "teams" ("name", "hometown", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Globetrotters"], ["hometown", "Harlem"], ["user_id", 1], ["created_at", "2019-01-24 23:15:56.233657"], ["updated_at", "2019-01-24 23:15:56.233657"]]
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mTeam Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = $1 AND "teams"."id" != $2 LIMIT $3[0m  [["name", "Globetrotters"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:10
+  [1m[36mTeam Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."hometown" = $1 AND "teams"."id" != $2 LIMIT $3[0m  [["hometown", "Harlem"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:10
+Redirected to http://localhost:3000/drafts/new/1
+Completed 302 Found in 36ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/drafts/new/1" for 127.0.0.1 at 2019-01-24 18:15:56 -0500
+Processing by DraftsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mTeam Load (0.5ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drafts_controller.rb:3
+  Rendering drafts/new.html.erb within layouts/application
+  [1m[36mPlayer Load (1.2ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Point Guard"]]
+  ↳ app/views/drafts/new.html.erb:6
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Shooting Guard"]]
+  ↳ app/views/drafts/new.html.erb:8
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Small Forward"]]
+  ↳ app/views/drafts/new.html.erb:10
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Power Forward"]]
+  ↳ app/views/drafts/new.html.erb:12
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Center"]]
+  ↳ app/views/drafts/new.html.erb:14
+  Rendered drafts/new.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 76ms (Views: 49.5ms | ActiveRecord: 16.8ms)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mPlayer Load (7.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.7ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:8
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.6ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:8
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:8
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:8
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.6ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.4ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.5ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPlayer Destroy (0.3ms)[0m  [1m[31mDELETE FROM "players" WHERE "players"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPlayer Create (0.6ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Michael Jordan"], ["position", "Shooting Guard"], ["ppg", "30.1"], ["fga", "22.9"], ["fgp", "49.7"], ["reb", "6.2"], ["ast", "5.3"], ["stl", "2.3"], ["blk", "0.8"], ["tov", "2.7"], ["created_at", "2019-01-25 00:25:52.108420"], ["updated_at", "2019-01-25 00:25:52.108420"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kevin Durant"], ["position", "Small Forward"], ["ppg", "27.2"], ["fga", "18.8"], ["fgp", "49.1"], ["reb", "7.1"], ["ast", "4.0"], ["stl", "1.1"], ["blk", "1.1"], ["tov", "3.2"], ["created_at", "2019-01-25 00:25:52.111142"], ["updated_at", "2019-01-25 00:25:52.111142"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "LeBron James"], ["position", "Small Forward"], ["ppg", "27.2"], ["fga", "19.6"], ["fgp", "50.4"], ["reb", "7.4"], ["ast", "7.2"], ["stl", "1.6"], ["blk", "0.8"], ["tov", "3.5"], ["created_at", "2019-01-25 00:25:52.113601"], ["updated_at", "2019-01-25 00:25:52.113601"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Allen Iverson"], ["position", "Point Guard"], ["ppg", "26.7"], ["fga", "21.8"], ["fgp", "42.5"], ["reb", "3.7"], ["ast", "6.2"], ["stl", "2.2"], ["blk", "0.2"], ["tov", "3.6"], ["created_at", "2019-01-25 00:25:52.116477"], ["updated_at", "2019-01-25 00:25:52.116477"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Karl Malone"], ["position", "Power Forward"], ["ppg", "25.0"], ["fga", "17.8"], ["fgp", "51.6"], ["reb", "10.1"], ["ast", "3.6"], ["stl", "1.4"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-25 00:25:52.118864"], ["updated_at", "2019-01-25 00:25:52.118864"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kobe Bryant"], ["position", "Shooting Guard"], ["ppg", "25.0"], ["fga", "19.5"], ["fgp", "44.7"], ["reb", "5.2"], ["ast", "4.7"], ["stl", "1.4"], ["blk", "0.5"], ["tov", "3.0"], ["created_at", "2019-01-25 00:25:52.120992"], ["updated_at", "2019-01-25 00:25:52.120992"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dominique Wilkins"], ["position", "Small Forward"], ["ppg", "24.8"], ["fga", "20.1"], ["fgp", "46.1"], ["reb", "6.7"], ["ast", "2.5"], ["stl", "1.3"], ["blk", "0.6"], ["tov", "2.5"], ["created_at", "2019-01-25 00:25:52.123247"], ["updated_at", "2019-01-25 00:25:52.123247"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kareem Abdul-Jabbar"], ["position", "Center"], ["ppg", "24.6"], ["fga", "18.1"], ["fgp", "55.9"], ["reb", "11.2"], ["ast", "3.6"], ["stl", "0.9"], ["blk", "2.6"], ["tov", "2.7"], ["created_at", "2019-01-25 00:25:52.125492"], ["updated_at", "2019-01-25 00:25:52.125492"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Larry Bird"], ["position", "Small Forward"], ["ppg", "24.3"], ["fga", "19.3"], ["fgp", "49.6"], ["reb", "10.0"], ["ast", "6.3"], ["stl", "1.7"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-25 00:25:52.127725"], ["updated_at", "2019-01-25 00:25:52.127725"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Adrian Dantley"], ["position", "Small Forward"], ["ppg", "24.3"], ["fga", "15.8"], ["fgp", "54.0"], ["reb", "5.7"], ["ast", "3.0"], ["stl", "1.0"], ["blk", "0.2"], ["tov", "2.9"], ["created_at", "2019-01-25 00:25:52.129959"], ["updated_at", "2019-01-25 00:25:52.129959"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shaquille O'Neal"], ["position", "Center"], ["ppg", "23.7"], ["fga", "16.1"], ["fgp", "58.2"], ["reb", "10.9"], ["ast", "2.5"], ["stl", "0.6"], ["blk", "2.3"], ["tov", "2.7"], ["created_at", "2019-01-25 00:25:52.132227"], ["updated_at", "2019-01-25 00:25:52.132227"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Carmelo Anthony"], ["position", "Small Forward"], ["ppg", "24.0"], ["fga", "19.1"], ["fgp", "44.9"], ["reb", "6.5"], ["ast", "3.0"], ["stl", "1.0"], ["blk", "0.5"], ["tov", "2.7"], ["created_at", "2019-01-25 00:25:52.134783"], ["updated_at", "2019-01-25 00:25:52.134783"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Russell Westbrook"], ["position", "Point Guard"], ["ppg", "22.9"], ["fga", "18.5"], ["fgp", "43.4"], ["reb", "6.8"], ["ast", "8.3"], ["stl", "1.8"], ["blk", "0.3"], ["tov", "4.0"], ["created_at", "2019-01-25 00:25:52.137139"], ["updated_at", "2019-01-25 00:25:52.137139"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dwyane Wade"], ["position", "Shooting Guard"], ["ppg", "22.2"], ["fga", "16.8"], ["fgp", "48.1"], ["reb", "4.7"], ["ast", "5.5"], ["stl", "1.6"], ["blk", "0.8"], ["tov", "3.2"], ["created_at", "2019-01-25 00:25:52.139404"], ["updated_at", "2019-01-25 00:25:52.139404"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Stephen Curry"], ["position", "Point Guard"], ["ppg", "22.4"], ["fga", "17.0"], ["fgp", "47.8"], ["reb", "4.5"], ["ast", "6.7"], ["stl", "1.7"], ["blk", "0.2"], ["tov", "3.1"], ["created_at", "2019-01-25 00:25:52.141669"], ["updated_at", "2019-01-25 00:25:52.141669"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tim Duncan"], ["position", "Power Forward"], ["ppg", "19.0"], ["fga", "14.6"], ["fgp", "50.6"], ["reb", "10.8"], ["ast", "3.0"], ["stl", "0.7"], ["blk", "2.2"], ["tov", "2.4"], ["created_at", "2019-01-25 00:25:52.144825"], ["updated_at", "2019-01-25 00:25:52.144825"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kyrie Irving"], ["position", "Point Guard"], ["ppg", "22.1"], ["fga", "17.4"], ["fgp", "46.5"], ["reb", "3.6"], ["ast", "5.6"], ["stl", "1.3"], ["blk", "0.3"], ["tov", "2.7"], ["created_at", "2019-01-25 00:25:52.147685"], ["updated_at", "2019-01-25 00:25:52.147685"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Hakeem Olajuwon"], ["position", "Center"], ["ppg", "21.8"], ["fga", "17.0"], ["fgp", "51.2"], ["reb", "11.1"], ["ast", "2.5"], ["stl", "1.7"], ["blk", "3.1"], ["tov", "3.0"], ["created_at", "2019-01-25 00:25:52.150595"], ["updated_at", "2019-01-25 00:25:52.150595"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Julius Erving"], ["position", "Small Forward"], ["ppg", "24.2"], ["fga", "18.8"], ["fgp", "50.6"], ["reb", "8.5"], ["ast", "4.2"], ["stl", "2.0"], ["blk", "1.7"], ["tov", "3.4"], ["created_at", "2019-01-25 00:25:52.152821"], ["updated_at", "2019-01-25 00:25:52.152821"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mPlayer Create (0.6ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Isiah Thomas"], ["position", "Point Guard"], ["ppg", "19.2"], ["fga", "16.2"], ["fgp", "45.2"], ["reb", "3.6"], ["ast", "9.3"], ["stl", "1.9"], ["blk", "0.3"], ["tov", "3.8"], ["created_at", "2019-01-25 00:25:52.155420"], ["updated_at", "2019-01-25 00:25:52.155420"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mPlayer Create (0.7ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Charles Barkley"], ["position", "Power Forward"], ["ppg", "22.1"], ["fga", "14.5"], ["fgp", "54.1"], ["reb", "11.7"], ["ast", "3.9"], ["stl", "1.5"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-25 00:25:52.159231"], ["updated_at", "2019-01-25 00:25:52.159231"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPlayer Create (0.7ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kevin Garnett"], ["position", "Power Forward"], ["ppg", "17.8"], ["fga", "14.5"], ["fgp", "49.7"], ["reb", "10.0"], ["ast", "3.7"], ["stl", "1.3"], ["blk", "1.4"], ["tov", "2.2"], ["created_at", "2019-01-25 00:25:52.163375"], ["updated_at", "2019-01-25 00:25:52.163375"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mPlayer Create (1.0ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Scottie Pippen"], ["position", "Small Forward"], ["ppg", "16.1"], ["fga", "13.3"], ["fgp", "47.3"], ["reb", "6.4"], ["ast", "5.2"], ["stl", "2.0"], ["blk", "0.8"], ["tov", "2.8"], ["created_at", "2019-01-25 00:25:52.172977"], ["updated_at", "2019-01-25 00:25:52.172977"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dirk Nowitzki"], ["position", "Power Forward"], ["ppg", "21.0"], ["fga", "15.8"], ["fgp", "47.2"], ["reb", "7.6"], ["ast", "2.4"], ["stl", "0.8"], ["blk", "0.9"], ["tov", "1.7"], ["created_at", "2019-01-25 00:25:52.177305"], ["updated_at", "2019-01-25 00:25:52.177305"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mPlayer Create (0.8ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Jason Kidd"], ["position", "Point Guard"], ["ppg", "12.6"], ["fga", "11.2"], ["fgp", "40.0"], ["reb", "6.3"], ["ast", "8.7"], ["stl", "1.9"], ["blk", "0.3"], ["tov", "2.9"], ["created_at", "2019-01-25 00:25:52.180228"], ["updated_at", "2019-01-25 00:25:52.180228"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Gary Payton"], ["position", "Point Guard"], ["ppg", "16.3"], ["fga", "14.0"], ["fgp", "46.6"], ["reb", "3.9"], ["ast", "6.7"], ["stl", "1.8"], ["blk", "0.2"], ["tov", "2.3"], ["created_at", "2019-01-25 00:25:52.184633"], ["updated_at", "2019-01-25 00:25:52.184633"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPlayer Create (0.6ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Clyde Drexler"], ["position", "Shooting Guard"], ["ppg", "20.4"], ["fga", "16.3"], ["fgp", "47.2"], ["reb", "6.1"], ["ast", "5.6"], ["stl", "2.0"], ["blk", "0.7"], ["tov", "2.7"], ["created_at", "2019-01-25 00:25:52.188501"], ["updated_at", "2019-01-25 00:25:52.188501"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Reggie Miller"], ["position", "Shooting Guard"], ["ppg", "8.2"], ["fga", "12.6"], ["fgp", "47.1"], ["reb", "3.0"], ["ast", "3.0"], ["stl", "1.1"], ["blk", "0.2"], ["tov", "1.7"], ["created_at", "2019-01-25 00:25:52.192317"], ["updated_at", "2019-01-25 00:25:52.192317"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Robert Parish"], ["position", "Center"], ["ppg", "14.5"], ["fga", "11.1"], ["fgp", "53.7"], ["reb", "9.1"], ["ast", "1.4"], ["stl", "0.8"], ["blk", "1.5"], ["tov", "2.1"], ["created_at", "2019-01-25 00:25:52.195847"], ["updated_at", "2019-01-25 00:25:52.195847"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Alonzo Mourning"], ["position", "Center"], ["ppg", "17.1"], ["fga", "11.6"], ["fgp", "52.7"], ["reb", "8.5"], ["ast", "1.1"], ["stl", "0.5"], ["blk", "2.8"], ["tov", "2.6"], ["created_at", "2019-01-25 00:25:52.199045"], ["updated_at", "2019-01-25 00:25:52.199045"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mPlayer Create (0.6ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Ray Allen"], ["position", "Shooting Guard"], ["ppg", "18.9"], ["fga", "14.6"], ["fgp", "45.2"], ["reb", "4.1"], ["ast", "3.4"], ["stl", "1.1"], ["blk", "0.2"], ["tov", "2.1"], ["created_at", "2019-01-25 00:25:52.202927"], ["updated_at", "2019-01-25 00:25:52.202927"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Chris Webber"], ["position", "Power Forward"], ["ppg", "20.7"], ["fga", "18.1"], ["fgp", "47.9"], ["reb", "9.8"], ["ast", "4.2"], ["stl", "1.4"], ["blk", "1.4"], ["tov", "2.8"], ["created_at", "2019-01-25 00:25:52.206193"], ["updated_at", "2019-01-25 00:25:52.206193"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Elvin Hayes"], ["position", "Power Forward"], ["ppg", "21.0"], ["fga", "18.6"], ["fgp", "45.2"], ["reb", "12.5"], ["ast", "1.8"], ["stl", "1.0"], ["blk", "2.0"], ["tov", "2.4"], ["created_at", "2019-01-25 00:25:52.209190"], ["updated_at", "2019-01-25 00:25:52.209190"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPlayer Create (1.0ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Chris Paul"], ["position", "Point Guard"], ["ppg", "18.6"], ["fga", "13.9"], ["fgp", "47.1"], ["reb", "4.5"], ["ast", "9.7"], ["stl", "2.2"], ["blk", "0.1"], ["tov", "2.4"], ["created_at", "2019-01-25 00:25:52.212751"], ["updated_at", "2019-01-25 00:25:52.212751"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tracy McGrady"], ["position", "Shooting Guard"], ["ppg", "19.6"], ["fga", "16.4"], ["fgp", "43.5"], ["reb", "5.6"], ["ast", "4.4"], ["stl", "1.2"], ["blk", "0.9"], ["tov", "2.2"], ["created_at", "2019-01-25 00:25:52.216108"], ["updated_at", "2019-01-25 00:25:52.216108"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dwight Howard"], ["position", "Center"], ["ppg", "17.4"], ["fga", "10.7"], ["fgp", "58.3"], ["reb", "12.6"], ["ast", "1.5"], ["stl", "0.9"], ["blk", "2.9"], ["tov", "2.9"], ["created_at", "2019-01-25 00:25:52.218377"], ["updated_at", "2019-01-25 00:25:52.218377"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Karl Anthony-Towns"], ["position", "Center"], ["ppg", "21.7"], ["fga", "15.6"], ["fgp", "53.5"], ["reb", "11.8"], ["ast", "2.5"], ["stl", "0.8"], ["blk", "1.5"], ["tov", "2.4"], ["created_at", "2019-01-25 00:25:52.220580"], ["updated_at", "2019-01-25 00:25:52.220580"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Vince Carter"], ["position", "Shooting Guard"], ["ppg", "17.4"], ["fga", "14.4"], ["fgp", "43.7"], ["reb", "4.4"], ["ast", "3.2"], ["stl", "1.0"], ["blk", "0.6"], ["tov", "1.8"], ["created_at", "2019-01-25 00:25:52.223264"], ["updated_at", "2019-01-25 00:25:52.223264"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Pau Gasol"], ["position", "Power Forward"], ["ppg", "17.2"], ["fga", "12.9"], ["fgp", "50.8"], ["reb", "9.3"], ["ast", "3.2"], ["stl", "0.5"], ["blk", "1.6"], ["tov", "2.2"], ["created_at", "2019-01-25 00:25:52.225883"], ["updated_at", "2019-01-25 00:25:52.225883"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Marc Gasol"], ["position", "Center"], ["ppg", "15.2"], ["fga", "11.7"], ["fgp", "48.3"], ["reb", "7.7"], ["ast", "3.4"], ["stl", "0.9"], ["blk", "1.5"], ["tov", "2.1"], ["created_at", "2019-01-25 00:25:52.228689"], ["updated_at", "2019-01-25 00:25:52.228689"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (128.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "NBAFantasyDraft_development"[0m
+  ↳ bin/rails:4
+  [1m[35m (127.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "NBAFantasyDraft_test"[0m
+  ↳ bin/rails:4
+  [1m[35m (369.8ms)[0m  [1m[35mCREATE DATABASE "NBAFantasyDraft_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35m (259.4ms)[0m  [1m[35mCREATE DATABASE "NBAFantasyDraft_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:4
+  [1m[35mSQL (3.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "drafts" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "drafts" ("id" bigserial primary key, "player_id" integer, "team_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "players" CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "players" ("id" bigserial primary key, "name" character varying, "position" character varying, "ppg" decimal, "fga" decimal, "fgp" decimal, "reb" decimal, "ast" decimal, "stl" decimal, "blk" decimal, "tov" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "teams" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "teams" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:48
+  [1m[35m (11.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:48
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190123205127)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190118205751),
+(20190118210248),
+(20190118210450);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (22.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-25 00:26:04.658424"], ["updated_at", "2019-01-25 00:26:04.658424"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "drafts" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "drafts" ("id" bigserial primary key, "player_id" integer, "team_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "players" CASCADE[0m
+  ↳ db/schema.rb:25
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "players" ("id" bigserial primary key, "name" character varying, "position" character varying, "ppg" decimal, "fga" decimal, "fgp" decimal, "reb" decimal, "ast" decimal, "stl" decimal, "blk" decimal, "tov" decimal, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "teams" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "teams" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:48
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:48
+  [1m[35m (6.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190123205127)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190118205751),
+(20190118210248),
+(20190118210450);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-01-25 00:26:04.778486"], ["updated_at", "2019-01-25 00:26:04.778486"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Update (7.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-01-25 00:26:04.784621"], ["key", "environment"]]
+  ↳ bin/rails:4
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:4
+  [1m[36mPlayer Load (0.9ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPlayer Create (0.7ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Michael Jordan"], ["position", "Shooting Guard"], ["ppg", "30.1"], ["fga", "22.9"], ["fgp", "49.7"], ["reb", "6.2"], ["ast", "5.3"], ["stl", "2.3"], ["blk", "0.8"], ["tov", "2.7"], ["created_at", "2019-01-25 00:26:04.852197"], ["updated_at", "2019-01-25 00:26:04.852197"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kevin Durant"], ["position", "Small Forward"], ["ppg", "27.2"], ["fga", "18.8"], ["fgp", "49.1"], ["reb", "7.1"], ["ast", "4.0"], ["stl", "1.1"], ["blk", "1.1"], ["tov", "3.2"], ["created_at", "2019-01-25 00:26:04.856517"], ["updated_at", "2019-01-25 00:26:04.856517"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "LeBron James"], ["position", "Small Forward"], ["ppg", "27.2"], ["fga", "19.6"], ["fgp", "50.4"], ["reb", "7.4"], ["ast", "7.2"], ["stl", "1.6"], ["blk", "0.8"], ["tov", "3.5"], ["created_at", "2019-01-25 00:26:04.859227"], ["updated_at", "2019-01-25 00:26:04.859227"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Allen Iverson"], ["position", "Point Guard"], ["ppg", "26.7"], ["fga", "21.8"], ["fgp", "42.5"], ["reb", "3.7"], ["ast", "6.2"], ["stl", "2.2"], ["blk", "0.2"], ["tov", "3.6"], ["created_at", "2019-01-25 00:26:04.862015"], ["updated_at", "2019-01-25 00:26:04.862015"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Karl Malone"], ["position", "Power Forward"], ["ppg", "25.0"], ["fga", "17.8"], ["fgp", "51.6"], ["reb", "10.1"], ["ast", "3.6"], ["stl", "1.4"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-25 00:26:04.864601"], ["updated_at", "2019-01-25 00:26:04.864601"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kobe Bryant"], ["position", "Shooting Guard"], ["ppg", "25.0"], ["fga", "19.5"], ["fgp", "44.7"], ["reb", "5.2"], ["ast", "4.7"], ["stl", "1.4"], ["blk", "0.5"], ["tov", "3.0"], ["created_at", "2019-01-25 00:26:04.866795"], ["updated_at", "2019-01-25 00:26:04.866795"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dominique Wilkins"], ["position", "Small Forward"], ["ppg", "24.8"], ["fga", "20.1"], ["fgp", "46.1"], ["reb", "6.7"], ["ast", "2.5"], ["stl", "1.3"], ["blk", "0.6"], ["tov", "2.5"], ["created_at", "2019-01-25 00:26:04.869413"], ["updated_at", "2019-01-25 00:26:04.869413"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kareem Abdul-Jabbar"], ["position", "Center"], ["ppg", "24.6"], ["fga", "18.1"], ["fgp", "55.9"], ["reb", "11.2"], ["ast", "3.6"], ["stl", "0.9"], ["blk", "2.6"], ["tov", "2.7"], ["created_at", "2019-01-25 00:26:04.872403"], ["updated_at", "2019-01-25 00:26:04.872403"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Larry Bird"], ["position", "Small Forward"], ["ppg", "24.3"], ["fga", "19.3"], ["fgp", "49.6"], ["reb", "10.0"], ["ast", "6.3"], ["stl", "1.7"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-25 00:26:04.874833"], ["updated_at", "2019-01-25 00:26:04.874833"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Adrian Dantley"], ["position", "Small Forward"], ["ppg", "24.3"], ["fga", "15.8"], ["fgp", "54.0"], ["reb", "5.7"], ["ast", "3.0"], ["stl", "1.0"], ["blk", "0.2"], ["tov", "2.9"], ["created_at", "2019-01-25 00:26:04.877520"], ["updated_at", "2019-01-25 00:26:04.877520"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Shaquille O'Neal"], ["position", "Center"], ["ppg", "23.7"], ["fga", "16.1"], ["fgp", "58.2"], ["reb", "10.9"], ["ast", "2.5"], ["stl", "0.6"], ["blk", "2.3"], ["tov", "2.7"], ["created_at", "2019-01-25 00:26:04.879800"], ["updated_at", "2019-01-25 00:26:04.879800"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Carmelo Anthony"], ["position", "Small Forward"], ["ppg", "24.0"], ["fga", "19.1"], ["fgp", "44.9"], ["reb", "6.5"], ["ast", "3.0"], ["stl", "1.0"], ["blk", "0.5"], ["tov", "2.7"], ["created_at", "2019-01-25 00:26:04.882073"], ["updated_at", "2019-01-25 00:26:04.882073"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Russell Westbrook"], ["position", "Point Guard"], ["ppg", "22.9"], ["fga", "18.5"], ["fgp", "43.4"], ["reb", "6.8"], ["ast", "8.3"], ["stl", "1.8"], ["blk", "0.3"], ["tov", "4.0"], ["created_at", "2019-01-25 00:26:04.885019"], ["updated_at", "2019-01-25 00:26:04.885019"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dwyane Wade"], ["position", "Shooting Guard"], ["ppg", "22.2"], ["fga", "16.8"], ["fgp", "48.1"], ["reb", "4.7"], ["ast", "5.5"], ["stl", "1.6"], ["blk", "0.8"], ["tov", "3.2"], ["created_at", "2019-01-25 00:26:04.887959"], ["updated_at", "2019-01-25 00:26:04.887959"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Stephen Curry"], ["position", "Point Guard"], ["ppg", "22.4"], ["fga", "17.0"], ["fgp", "47.8"], ["reb", "4.5"], ["ast", "6.7"], ["stl", "1.7"], ["blk", "0.2"], ["tov", "3.1"], ["created_at", "2019-01-25 00:26:04.890602"], ["updated_at", "2019-01-25 00:26:04.890602"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tim Duncan"], ["position", "Power Forward"], ["ppg", "19.0"], ["fga", "14.6"], ["fgp", "50.6"], ["reb", "10.8"], ["ast", "3.0"], ["stl", "0.7"], ["blk", "2.2"], ["tov", "2.4"], ["created_at", "2019-01-25 00:26:04.893834"], ["updated_at", "2019-01-25 00:26:04.893834"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kyrie Irving"], ["position", "Point Guard"], ["ppg", "22.1"], ["fga", "17.4"], ["fgp", "46.5"], ["reb", "3.6"], ["ast", "5.6"], ["stl", "1.3"], ["blk", "0.3"], ["tov", "2.7"], ["created_at", "2019-01-25 00:26:04.896840"], ["updated_at", "2019-01-25 00:26:04.896840"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Hakeem Olajuwon"], ["position", "Center"], ["ppg", "21.8"], ["fga", "17.0"], ["fgp", "51.2"], ["reb", "11.1"], ["ast", "2.5"], ["stl", "1.7"], ["blk", "3.1"], ["tov", "3.0"], ["created_at", "2019-01-25 00:26:04.899620"], ["updated_at", "2019-01-25 00:26:04.899620"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mPlayer Create (0.6ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Julius Erving"], ["position", "Small Forward"], ["ppg", "24.2"], ["fga", "18.8"], ["fgp", "50.6"], ["reb", "8.5"], ["ast", "4.2"], ["stl", "2.0"], ["blk", "1.7"], ["tov", "3.4"], ["created_at", "2019-01-25 00:26:04.902903"], ["updated_at", "2019-01-25 00:26:04.902903"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:29
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Isiah Thomas"], ["position", "Point Guard"], ["ppg", "19.2"], ["fga", "16.2"], ["fgp", "45.2"], ["reb", "3.6"], ["ast", "9.3"], ["stl", "1.9"], ["blk", "0.3"], ["tov", "3.8"], ["created_at", "2019-01-25 00:26:04.905582"], ["updated_at", "2019-01-25 00:26:04.905582"]]
+  ↳ db/seeds.rb:29
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:29
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:30
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Charles Barkley"], ["position", "Power Forward"], ["ppg", "22.1"], ["fga", "14.5"], ["fgp", "54.1"], ["reb", "11.7"], ["ast", "3.9"], ["stl", "1.5"], ["blk", "0.8"], ["tov", "3.1"], ["created_at", "2019-01-25 00:26:04.908404"], ["updated_at", "2019-01-25 00:26:04.908404"]]
+  ↳ db/seeds.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:30
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Kevin Garnett"], ["position", "Power Forward"], ["ppg", "17.8"], ["fga", "14.5"], ["fgp", "49.7"], ["reb", "10.0"], ["ast", "3.7"], ["stl", "1.3"], ["blk", "1.4"], ["tov", "2.2"], ["created_at", "2019-01-25 00:26:04.911192"], ["updated_at", "2019-01-25 00:26:04.911192"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Scottie Pippen"], ["position", "Small Forward"], ["ppg", "16.1"], ["fga", "13.3"], ["fgp", "47.3"], ["reb", "6.4"], ["ast", "5.2"], ["stl", "2.0"], ["blk", "0.8"], ["tov", "2.8"], ["created_at", "2019-01-25 00:26:04.913978"], ["updated_at", "2019-01-25 00:26:04.913978"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dirk Nowitzki"], ["position", "Power Forward"], ["ppg", "21.0"], ["fga", "15.8"], ["fgp", "47.2"], ["reb", "7.6"], ["ast", "2.4"], ["stl", "0.8"], ["blk", "0.9"], ["tov", "1.7"], ["created_at", "2019-01-25 00:26:04.916798"], ["updated_at", "2019-01-25 00:26:04.916798"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Jason Kidd"], ["position", "Point Guard"], ["ppg", "12.6"], ["fga", "11.2"], ["fgp", "40.0"], ["reb", "6.3"], ["ast", "8.7"], ["stl", "1.9"], ["blk", "0.3"], ["tov", "2.9"], ["created_at", "2019-01-25 00:26:04.920044"], ["updated_at", "2019-01-25 00:26:04.920044"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Gary Payton"], ["position", "Point Guard"], ["ppg", "16.3"], ["fga", "14.0"], ["fgp", "46.6"], ["reb", "3.9"], ["ast", "6.7"], ["stl", "1.8"], ["blk", "0.2"], ["tov", "2.3"], ["created_at", "2019-01-25 00:26:04.922852"], ["updated_at", "2019-01-25 00:26:04.922852"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Clyde Drexler"], ["position", "Shooting Guard"], ["ppg", "20.4"], ["fga", "16.3"], ["fgp", "47.2"], ["reb", "6.1"], ["ast", "5.6"], ["stl", "2.0"], ["blk", "0.7"], ["tov", "2.7"], ["created_at", "2019-01-25 00:26:04.926062"], ["updated_at", "2019-01-25 00:26:04.926062"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Reggie Miller"], ["position", "Shooting Guard"], ["ppg", "8.2"], ["fga", "12.6"], ["fgp", "47.1"], ["reb", "3.0"], ["ast", "3.0"], ["stl", "1.1"], ["blk", "0.2"], ["tov", "1.7"], ["created_at", "2019-01-25 00:26:04.928707"], ["updated_at", "2019-01-25 00:26:04.928707"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Robert Parish"], ["position", "Center"], ["ppg", "14.5"], ["fga", "11.1"], ["fgp", "53.7"], ["reb", "9.1"], ["ast", "1.4"], ["stl", "0.8"], ["blk", "1.5"], ["tov", "2.1"], ["created_at", "2019-01-25 00:26:04.931395"], ["updated_at", "2019-01-25 00:26:04.931395"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Alonzo Mourning"], ["position", "Center"], ["ppg", "17.1"], ["fga", "11.6"], ["fgp", "52.7"], ["reb", "8.5"], ["ast", "1.1"], ["stl", "0.5"], ["blk", "2.8"], ["tov", "2.6"], ["created_at", "2019-01-25 00:26:04.934511"], ["updated_at", "2019-01-25 00:26:04.934511"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Ray Allen"], ["position", "Shooting Guard"], ["ppg", "18.9"], ["fga", "14.6"], ["fgp", "45.2"], ["reb", "4.1"], ["ast", "3.4"], ["stl", "1.1"], ["blk", "0.2"], ["tov", "2.1"], ["created_at", "2019-01-25 00:26:04.937817"], ["updated_at", "2019-01-25 00:26:04.937817"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Chris Webber"], ["position", "Power Forward"], ["ppg", "20.7"], ["fga", "18.1"], ["fgp", "47.9"], ["reb", "9.8"], ["ast", "4.2"], ["stl", "1.4"], ["blk", "1.4"], ["tov", "2.8"], ["created_at", "2019-01-25 00:26:04.940705"], ["updated_at", "2019-01-25 00:26:04.940705"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:42
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Elvin Hayes"], ["position", "Power Forward"], ["ppg", "21.0"], ["fga", "18.6"], ["fgp", "45.2"], ["reb", "12.5"], ["ast", "1.8"], ["stl", "1.0"], ["blk", "2.0"], ["tov", "2.4"], ["created_at", "2019-01-25 00:26:04.944047"], ["updated_at", "2019-01-25 00:26:04.944047"]]
+  ↳ db/seeds.rb:42
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:43
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Chris Paul"], ["position", "Point Guard"], ["ppg", "18.6"], ["fga", "13.9"], ["fgp", "47.1"], ["reb", "4.5"], ["ast", "9.7"], ["stl", "2.2"], ["blk", "0.1"], ["tov", "2.4"], ["created_at", "2019-01-25 00:26:04.946900"], ["updated_at", "2019-01-25 00:26:04.946900"]]
+  ↳ db/seeds.rb:43
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:44
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Tracy McGrady"], ["position", "Shooting Guard"], ["ppg", "19.6"], ["fga", "16.4"], ["fgp", "43.5"], ["reb", "5.6"], ["ast", "4.4"], ["stl", "1.2"], ["blk", "0.9"], ["tov", "2.2"], ["created_at", "2019-01-25 00:26:04.949597"], ["updated_at", "2019-01-25 00:26:04.949597"]]
+  ↳ db/seeds.rb:44
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:44
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:45
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Dwight Howard"], ["position", "Center"], ["ppg", "17.4"], ["fga", "10.7"], ["fgp", "58.3"], ["reb", "12.6"], ["ast", "1.5"], ["stl", "0.9"], ["blk", "2.9"], ["tov", "2.9"], ["created_at", "2019-01-25 00:26:04.952485"], ["updated_at", "2019-01-25 00:26:04.952485"]]
+  ↳ db/seeds.rb:45
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:45
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Karl Anthony-Towns"], ["position", "Center"], ["ppg", "21.7"], ["fga", "15.6"], ["fgp", "53.5"], ["reb", "11.8"], ["ast", "2.5"], ["stl", "0.8"], ["blk", "1.5"], ["tov", "2.4"], ["created_at", "2019-01-25 00:26:04.955778"], ["updated_at", "2019-01-25 00:26:04.955778"]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mPlayer Create (0.4ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Vince Carter"], ["position", "Shooting Guard"], ["ppg", "17.4"], ["fga", "14.4"], ["fgp", "43.7"], ["reb", "4.4"], ["ast", "3.2"], ["stl", "1.0"], ["blk", "0.6"], ["tov", "1.8"], ["created_at", "2019-01-25 00:26:04.958488"], ["updated_at", "2019-01-25 00:26:04.958488"]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:48
+  [1m[36mPlayer Create (0.3ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Pau Gasol"], ["position", "Power Forward"], ["ppg", "17.2"], ["fga", "12.9"], ["fgp", "50.8"], ["reb", "9.3"], ["ast", "3.2"], ["stl", "0.5"], ["blk", "1.6"], ["tov", "2.2"], ["created_at", "2019-01-25 00:26:04.961388"], ["updated_at", "2019-01-25 00:26:04.961388"]]
+  ↳ db/seeds.rb:48
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:48
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mPlayer Create (0.5ms)[0m  [1m[32mINSERT INTO "players" ("name", "position", "ppg", "fga", "fgp", "reb", "ast", "stl", "blk", "tov", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["name", "Marc Gasol"], ["position", "Center"], ["ppg", "15.2"], ["fga", "11.7"], ["fgp", "48.3"], ["reb", "7.7"], ["ast", "3.4"], ["stl", "0.9"], ["blk", "1.5"], ["tov", "2.1"], ["created_at", "2019-01-25 00:26:04.964303"], ["updated_at", "2019-01-25 00:26:04.964303"]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+Started GET "/" for 127.0.0.1 at 2019-01-24 19:26:17 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jeroldkim/.rvm/gems/ruby-2.3.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/jeroldkim/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/jeroldkim/.rvm/gems/ruby-2.3.3/gems/railties-5.2.2/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 19ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-01-24 19:26:24 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 305ms (Views: 256.7ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-01-24 19:26:30 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d1SpZZikhFkUHlqpl+kzCKPx6+yCMl3VrJziEzYPSEzX1fVzbAEPc+K/raG48ptYRMggRnCphz5+DIqbT08hPg==", "user"=>{"username"=>"horangijk", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:9
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "horangijk"], ["password_digest", "$2a$10$xI/kmrv2I88PEcNykLdXxuiu0qPdc/J60PySEow2Vqz8vy62LNx4."], ["created_at", "2019-01-25 00:26:30.091319"], ["updated_at", "2019-01-25 00:26:30.091319"]]
+  ↳ app/controllers/users_controller.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:9
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 80ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-01-24 19:26:30 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mTeam Load (1.9ms)[0m  [1m[34mSELECT "teams".* FROM "teams" WHERE "teams"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:4
+  Rendered users/show.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 47ms (Views: 35.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/teams/new" for 127.0.0.1 at 2019-01-24 19:26:33 -0500
+Processing by TeamsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  Rendering teams/new.html.erb within layouts/application
+  Rendered teams/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 44ms (Views: 30.3ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/teams" for 127.0.0.1 at 2019-01-24 19:26:39 -0500
+Processing by TeamsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KVpSiwf1KI0jY35JjNYNZbo1Uld4Iy8LQul2IAanuniJ2w6d81Cjp9XCiUGjzaU1XQyZ/Yq49eCQeR6of+fTCg==", "team"=>{"user_id"=>"1", "hometown"=>"Harlem", "name"=>"Globetrotters"}, "commit"=>"Create Team"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mTeam Exists (2.1ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = $1 LIMIT $2[0m  [["name", "Globetrotters"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mTeam Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."hometown" = $1 LIMIT $2[0m  [["hometown", "Harlem"], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mTeam Create (0.8ms)[0m  [1m[32mINSERT INTO "teams" ("name", "hometown", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Globetrotters"], ["hometown", "Harlem"], ["user_id", 1], ["created_at", "2019-01-25 00:26:39.347424"], ["updated_at", "2019-01-25 00:26:39.347424"]]
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[35m (10.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/teams_controller.rb:9
+  [1m[36mTeam Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."name" = $1 AND "teams"."id" != $2 LIMIT $3[0m  [["name", "Globetrotters"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:10
+  [1m[36mTeam Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "teams" WHERE "teams"."hometown" = $1 AND "teams"."id" != $2 LIMIT $3[0m  [["hometown", "Harlem"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/teams_controller.rb:10
+Redirected to http://localhost:3000/drafts/new/1
+Completed 302 Found in 33ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/drafts/new/1" for 127.0.0.1 at 2019-01-24 19:26:39 -0500
+Processing by DraftsController#new as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14
+  [1m[36mTeam Load (0.3ms)[0m  [1m[34mSELECT  "teams".* FROM "teams" WHERE "teams"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/drafts_controller.rb:3
+  Rendering drafts/new.html.erb within layouts/application
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Point Guard"]]
+  ↳ app/views/drafts/new.html.erb:6
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Shooting Guard"]]
+  ↳ app/views/drafts/new.html.erb:8
+  [1m[36mPlayer Load (1.7ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Small Forward"]]
+  ↳ app/views/drafts/new.html.erb:10
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Power Forward"]]
+  ↳ app/views/drafts/new.html.erb:12
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players" WHERE "players"."position" = $1[0m  [["position", "Center"]]
+  ↳ app/views/drafts/new.html.erb:14
+  Rendered drafts/new.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 60ms (Views: 40.4ms | ActiveRecord: 9.8ms)
+
+
