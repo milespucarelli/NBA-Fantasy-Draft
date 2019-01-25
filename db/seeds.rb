@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Player.destroy_all
+Team.destroy_all
+User.destroy_all
+Draft.destroy_all
 
 Player.create(name: 'Michael Jordan', position: 'Shooting Guard', ppg: 30.1, fga: 22.9, fgp: 49.7, reb: 6.2, ast: 5.3, stl: 2.3, blk: 0.8, tov: 2.7)
 Player.create(name: 'Kevin Durant', position: 'Small Forward', ppg: 27.2, fga: 18.8, fgp: 49.1, reb: 7.1, ast: 4.0, stl: 1.1, blk: 1.1, tov: 3.2)
@@ -23,6 +26,8 @@ Player.create(name: 'Russell Westbrook', position: 'Point Guard', ppg: 22.9, fga
 Player.create(name: 'Dwyane Wade', position: 'Shooting Guard', ppg: 22.2, fga: 16.8, fgp: 48.1, reb: 4.7, ast: 5.5, stl: 1.6, blk: 0.8, tov: 3.2)
 Player.create(name: 'Stephen Curry', position: 'Point Guard', ppg: 22.4, fga: 17.0, fgp: 47.8, reb: 4.5, ast: 6.7, stl: 1.7, blk: 0.2, tov: 3.1)
 Player.create(name: 'Tim Duncan', position: 'Power Forward', ppg: 19.0, fga: 14.6, fgp: 50.6, reb: 10.8, ast: 3.0, stl: 0.7, blk: 2.2, tov: 2.4)
+User.create(username: 'CPU', password: 'computer')
+Team.create(hometown: 'Matrix', name: 'Sentinals', user_id: 1)
 # doc = Nokogiri::HTML(open('https://www.basketball-reference.com/awards/slam_500_greatest.html'))
 # table = doc.at('tbody')
 # table.search('tr').each do |tr|

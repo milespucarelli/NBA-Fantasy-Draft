@@ -1,4 +1,6 @@
 class TeamsController < ApplicationController
+  include Simulation
+
   def new
     current_user
     @team = Team.new(user_id: @current_user.id)
@@ -44,6 +46,13 @@ class TeamsController < ApplicationController
     find_team
     @team.destroy
     redirect_to teams_path
+  end
+
+  def simulator
+    @user_team = Team.find(params[:id])
+    @result = simulate(@user_team)
+    @cpu_team = Team.find_by(user_id: 1)
+    render '/teams/simulation'
   end
 
   private

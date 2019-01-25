@@ -4,6 +4,8 @@
   <li><%= link_to player.name, player_path(player)%></li>
 <% end %>
 </ul>
+<%= button_to 'Run a Simulation', simulation_path(@team), method: 'get' %>
+<br>
 <%= button_to 'Back to Teams List', user_path(@current_user), method: 'get'%>
 <%= button_to "Edit Team Info", edit_team_path(@team), method: 'get' %>
 <%= button_to "Edit Players", edit_draft_path(@team), method: 'get'%>

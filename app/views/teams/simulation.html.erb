@@ -1,0 +1,44 @@
+<h1><%= @result[:user_score] > @result[:cpu_score] ? 'Winner!' : 'Loser...' %></h1>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th><%= @user_team.full_name %></th>
+      <th><%= @cpu_team.full_name %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Final Score</th>
+      <td><%= @result[:user_score] %></td>
+      <td><%= @result[:cpu_score] %></td>
+    </tr>
+    <tr>
+      <th>Point Guards</th>
+      <td><%= @user_team.players.find_by(position: 'Point Guard').name %></td>
+      <td><%= @cpu_team.players.find_by(position: 'Point Guard').name %></td>
+    </tr>
+    <tr>
+      <th>Shooting Guards</th>
+      <td><%= @user_team.players.find_by(position: 'Shooting Guard').name %></td>
+      <td><%= @cpu_team.players.find_by(position: 'Shooting Guard').name %></td>
+    </tr>
+    <tr>
+      <th>Small Forwards</th>
+      <td><%= @user_team.players.find_by(position: 'Small Forward').name %></td>
+      <td><%= @cpu_team.players.find_by(position: 'Small Forward').name %></td>
+    </tr>
+    <tr>
+      <th>Power Forwards</th>
+      <td><%= @user_team.players.find_by(position: 'Power Forward').name %></td>
+      <td><%= @cpu_team.players.find_by(position: 'Power Forward').name %></td>
+    </tr>
+    <tr>
+      <th>Centers</th>
+      <td><%= @user_team.players.find_by(position: 'Center').name %></td>
+      <td><%= @cpu_team.players.find_by(position: 'Center').name %></td>
+    </tr>
+  </tbody>
+</table>
+
+<%= button_to 'View Your Teams', user_path(@user_team.user), method: 'get' %>
