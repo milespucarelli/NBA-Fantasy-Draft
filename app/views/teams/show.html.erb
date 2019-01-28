@@ -4,6 +4,9 @@
   <li><%= link_to player.name, player_path(player)%></li>
 <% end %>
 </ul>
+<br>
+<br>
+<br>
 <%= button_to 'Run a Simulation', simulation_path(@team), method: 'get' %>
 <br>
 <%= button_to 'Back to Teams List', user_path(@current_user), method: 'get'%>

@@ -11,55 +11,31 @@
 
   <body>
     <div class="navbar">
+      <h1 id='main-title'>NBAFantasyDraft</h1>
       <div class="dropdown">
         <button class="dropbtn">
           <img src='https://static.thenounproject.com/png/192837-200.png' />
         </button>
-        <div class="dropdown-content">
-          <%= link_to 'Profile', user_path(@current_user) %>
-          <%= link_to 'Edit Info', edit_user_path(@current_user) %>
-          <%= link_to 'Logout', logout_path, method: 'delete' %>
-        </div>
+        <% if logged_in? %>
+          <div class="dropdown-content">
+            <%= link_to 'Profile', user_path(@current_user) %>
+            <%= link_to 'Edit Info', edit_user_path(@current_user) %>
+            <%= link_to 'Logout', logout_path, method: 'delete' %>
+          </div>
+        <% end %>
       </div>
     </div>
     <div>
-      <!-- <div class='marquee'>
-        <img src="http://www.stickpng.com/assets/thumbs/58419be4a6515b1e0ad75a58.png" alt="Atlanta Hawks">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c6aa6515b1e0ad75a61.png" alt="Boston Celtics">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c7ba6515b1e0ad75a62.png" alt="Brooklyn Nets">
-        <img src="http://www.stickpng.com/assets/thumbs/58419bd7a6515b1e0ad75a57.png" alt="Charlotte Hornets">
-        <img src="http://www.stickpng.com/assets/thumbs/58419cf6a6515b1e0ad75a6b.png" alt="Chicago Bulls">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c8da6515b1e0ad75a63.png" alt="Cleveland Cavaliers">
-        <img src="http://www.stickpng.com/assets/thumbs/58419cd6a6515b1e0ad75a68.png" alt="Dallas Mavericks">
-        <img src="http://www.stickpng.com/assets/thumbs/58419b70a6515b1e0ad75a50.png" alt="Denver Nuggets">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c4ca6515b1e0ad75a5f.png" alt="Detroit Pistons">
-        <img src="http://www.stickpng.com/assets/thumbs/58419ce2a6515b1e0ad75a69.png" alt="Golden State Warriors">
-        <img src="http://www.stickpng.com/assets/thumbs/58419ceda6515b1e0ad75a6a.png" alt="Houston Rockets">
-        <img src="http://www.stickpng.com/assets/thumbs/58419b8da6515b1e0ad75a52.png" alt="Indiana Pacers">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c59a6515b1e0ad75a60.png" alt="Los Angeles Clippers">
-        <img src="http://www.stickpng.com/assets/thumbs/58419d0aa6515b1e0ad75a6c.png" alt="Los Angeles Lakers">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c00a6515b1e0ad75a5a.png" alt="Memphis Grizzlies">
-        <img src="http://www.stickpng.com/assets/thumbs/58419cafa6515b1e0ad75a65.png" alt="Miami Heat">
-        <img src="http://www.stickpng.com/assets/thumbs/58419ba7a6515b1e0ad75a54.png" alt="Milwaukee Bucks">
-        <img src="http://www.stickpng.com/assets/thumbs/58419bc5a6515b1e0ad75a56.png" alt="Minnesota Timberwolves">
-        <img src="http://www.stickpng.com/assets/thumbs/58419b9ba6515b1e0ad75a53.png" alt="New Orleans Pelicans">
-        <img src="http://www.stickpng.com/assets/thumbs/58419cc8a6515b1e0ad75a67.png" alt="New York Knicks">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c20a6515b1e0ad75a5c.png" alt="Oklahoma City Thunder">
-        <img src="http://www.stickpng.com/assets/thumbs/58419b7da6515b1e0ad75a51.png" alt="Orlando Magic">
-        <img src="http://www.stickpng.com/assets/thumbs/58419ca3a6515b1e0ad75a64.png" alt="Philadelphia 76ers">
-        <img src="http://www.stickpng.com/assets/thumbs/58419d52a6515b1e0ad75a6d.png" alt="Phoenix Suns">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c2fa6515b1e0ad75a5d.png" alt="Portland Trailblazers">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c3da6515b1e0ad75a5e.png" alt="Sacramento Kings">
-        <img src="http://www.stickpng.com/assets/thumbs/58419cbca6515b1e0ad75a66.png" alt="San Antonio Spurs">
-        <img src="http://www.stickpng.com/assets/thumbs/5a2d99c2bf4f3e2f8b6e4418.png" alt="Seattle Supersonics">
-        <img src="http://www.stickpng.com/assets/thumbs/58419bf3a6515b1e0ad75a59.png" alt="Toronto Raptors">
-        <img src="http://www.stickpng.com/assets/thumbs/58419bb6a6515b1e0ad75a55.png" alt="Utah Jazz">
-        <img src="http://www.stickpng.com/assets/thumbs/58419c12a6515b1e0ad75a5b.png" alt="Washington Wizards">
-      </div> -->
+      <div class='marquee'>
+        <div class="images">
+        </div>
+      </div>
     </div>
-    <div class = "grid-container">
-      <div></div>
-    <%= yield %>
-  </div>
+    <div class="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item" id='site-main'>
+        <div><%= yield %></div>
+      <div class="grid-item"></div>
+    </div>
   </body>
 </html>

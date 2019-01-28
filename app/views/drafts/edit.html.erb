@@ -4,14 +4,14 @@
   <%= hidden_field_tag '_method', 'patch' %>
   <%= hidden_field_tag 'draft[team_id]', @team.id %>
   <%= label_tag "Point Guard" %>
-  <%= collection_select 'draft[point_guard]', :player_id, @point_guards, :id, :name, selected: @selected_pg.id %>
+  <%= collection_select 'draft[point_guard]', :player_id, @point_guards, :id, :name, selected: @selected_pg.id %><br>
   <%= label_tag "Shooting Guard" %>
-  <%= collection_select 'draft[shooting_guard]', :player_id, @shooting_guards, :id, :name, selected: @selected_sg.id %>
+  <%= collection_select 'draft[shooting_guard]', :player_id, @shooting_guards, :id, :name, selected: @selected_sg.id %><br>
   <%= label_tag "Small Forward" %>
-  <%= collection_select 'draft[small_forward]', :player_id, @small_forwards, :id, :name, selected: @selected_sf.id %>
+  <%= collection_select 'draft[small_forward]', :player_id, @small_forwards, :id, :name, selected: @selected_sf.id %><br>
   <%= label_tag "Power Forward" %>
-  <%= collection_select 'draft[power_forward]', :player_id, @power_forwards, :id, :name, selected: @selected_pf.id %>
+  <%= collection_select 'draft[power_forward]', :player_id, @power_forwards, :id, :name, selected: @selected_pf.id %><br>
   <%= label_tag "Center" %>
-  <%= collection_select 'draft[center]', :player_id, @centers, :id, :name, selected: @selected_c.id %>
+  <%= collection_select 'draft[center]', :player_id, @centers, :id, :name, selected: @selected_c.id %><br>
   <%= submit_tag "Re-Draft Players" %>
 <% end %>
